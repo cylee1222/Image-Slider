@@ -37,7 +37,6 @@ function displayImage(){
         if(flag){
             ani_stop = true
         }
-        flag = false
         ani_fin = false
     }
 
