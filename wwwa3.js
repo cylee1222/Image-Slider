@@ -4,7 +4,7 @@ var prev_slide = null
 var curr_slide = 0
 
 var speed = 'lower'
-var dx = -1
+var dx = -.5
 var x = 640
 var ani, ani_fin = false, ani_stop = false, flag = false
 
@@ -22,6 +22,7 @@ function loadImage(){
     })
     document.getElementById('myCanvas').addEventListener("mouseout",function(){
         ani_stop = false
+        flag = false
     })
     document.getElementById('myCanvas').addEventListener("click",function(){
         if(ani_stop){
